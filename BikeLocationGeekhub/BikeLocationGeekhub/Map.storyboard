@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XDO-LX-Pvb">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="BEm-r7-ojv">
+            <objects>
+                <viewController id="XDO-LX-Pvb" customClass="MapViewController" customModule="BikeLocationGeekhub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ejn-qL-87l"/>
+                        <viewControllerLayoutGuide type="bottom" id="iuD-PF-LsL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UgC-qv-PXl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="Map" translatesAutoresizingMaskIntoConstraints="NO" id="SDq-Vl-Jqs" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gha-O3-W3j">
+                                        <rect key="frame" x="263" y="434" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.4044574058" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gha-O3-W3j" secondAttribute="trailing" constant="8" id="8TN-TR-MbN"/>
+                                    <constraint firstAttribute="bottom" secondItem="gha-O3-W3j" secondAttribute="bottom" constant="83" id="Prr-yX-FZJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iuD-PF-LsL" firstAttribute="top" secondItem="SDq-Vl-Jqs" secondAttribute="bottom" id="9cw-4d-rqn"/>
+                            <constraint firstItem="SDq-Vl-Jqs" firstAttribute="top" secondItem="ejn-qL-87l" secondAttribute="bottom" id="Dxn-MV-kOE"/>
+                            <constraint firstAttribute="trailing" secondItem="SDq-Vl-Jqs" secondAttribute="trailing" id="JhZ-v7-jIu"/>
+                            <constraint firstAttribute="trailing" secondItem="SDq-Vl-Jqs" secondAttribute="trailing" id="Wc9-hc-HYm"/>
+                            <constraint firstItem="iuD-PF-LsL" firstAttribute="top" secondItem="SDq-Vl-Jqs" secondAttribute="bottom" id="gMV-U6-GUb"/>
+                            <constraint firstItem="SDq-Vl-Jqs" firstAttribute="leading" secondItem="UgC-qv-PXl" secondAttribute="leading" id="sW7-ja-9Ox"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="SDq-Vl-Jqs" id="E7a-3t-eww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XdJ-zD-nXe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22.5" y="33.802816901408448"/>
+        </scene>
+    </scenes>
+</document>

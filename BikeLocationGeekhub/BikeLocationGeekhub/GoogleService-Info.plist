@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>658709156794-eklc9mdb603itojvc3d06k6u09jjucum.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.658709156794-eklc9mdb603itojvc3d06k6u09jjucum</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBFmr0lG6c9lqqHeaddc0-A17DL3sfGhw8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>658709156794</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.BikeLocation</string>
+	<key>PROJECT_ID</key>
+	<string>bikelocationgeekhub</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bikelocationgeekhub.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:658709156794:ios:5004cbaea49d2171</string>
+	<key>DATABASE_URL</key>
+	<string>https://bikelocationgeekhub.firebaseio.com</string>
+</dict>
+</plist>
