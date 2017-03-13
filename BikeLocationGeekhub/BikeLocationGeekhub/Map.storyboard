@@ -24,16 +24,23 @@
                             <view contentMode="scaleToFill" restorationIdentifier="Map" translatesAutoresizingMaskIntoConstraints="NO" id="SDq-Vl-Jqs" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gha-O3-W3j">
-                                        <rect key="frame" x="263" y="434" width="51" height="31"/>
-                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYM-17-puH">
+                                        <rect key="frame" x="8" y="8" width="39" height="30"/>
+                                        <state key="normal" title="Menu"/>
+                                        <connections>
+                                            <segue destination="ylA-6N-UGT" kind="presentation" id="KhS-7y-pbs"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.4044574058" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="gha-O3-W3j" secondAttribute="trailing" constant="8" id="8TN-TR-MbN"/>
-                                    <constraint firstAttribute="bottom" secondItem="gha-O3-W3j" secondAttribute="bottom" constant="83" id="Prr-yX-FZJ"/>
+                                    <constraint firstItem="mYM-17-puH" firstAttribute="top" secondItem="SDq-Vl-Jqs" secondAttribute="top" constant="8" id="fl8-OD-R4Z"/>
+                                    <constraint firstItem="mYM-17-puH" firstAttribute="leading" secondItem="SDq-Vl-Jqs" secondAttribute="leading" constant="8" id="qhJ-rv-Zh2"/>
                                 </constraints>
                             </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gha-O3-W3j">
+                                <rect key="frame" x="261" y="438" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -42,16 +49,65 @@
                             <constraint firstAttribute="trailing" secondItem="SDq-Vl-Jqs" secondAttribute="trailing" id="JhZ-v7-jIu"/>
                             <constraint firstAttribute="trailing" secondItem="SDq-Vl-Jqs" secondAttribute="trailing" id="Wc9-hc-HYm"/>
                             <constraint firstItem="iuD-PF-LsL" firstAttribute="top" secondItem="SDq-Vl-Jqs" secondAttribute="bottom" id="gMV-U6-GUb"/>
+                            <constraint firstItem="iuD-PF-LsL" firstAttribute="top" secondItem="gha-O3-W3j" secondAttribute="bottom" constant="99" id="iuJ-LX-4P8"/>
+                            <constraint firstAttribute="trailing" secondItem="gha-O3-W3j" secondAttribute="trailing" constant="10" id="qEJ-fU-Exr"/>
                             <constraint firstItem="SDq-Vl-Jqs" firstAttribute="leading" secondItem="UgC-qv-PXl" secondAttribute="leading" id="sW7-ja-9Ox"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="locationSwitcher" destination="gha-O3-W3j" id="kiz-c8-Nl5"/>
                         <outlet property="mapView" destination="SDq-Vl-Jqs" id="E7a-3t-eww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XdJ-zD-nXe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22.5" y="33.802816901408448"/>
+            <point key="canvasLocation" x="23" y="42"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="keV-ON-DlN">
+            <objects>
+                <viewController id="ylA-6N-UGT" customClass="MenuViewController" customModule="BikeLocationGeekhub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjg-az-d3S"/>
+                        <viewControllerLayoutGuide type="bottom" id="nJ0-O3-OQ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jeA-Yn-hmT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-Rp-J3G">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-Tv-18s">
+                                        <rect key="frame" x="55" y="40" width="130" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="aLH-nT-fJf"/>
+                                            <constraint firstAttribute="height" constant="130" id="y2E-rH-1WZ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qGb-Tv-18s" firstAttribute="top" secondItem="pMX-Rp-J3G" secondAttribute="top" constant="40" id="8ii-zo-eFd"/>
+                                    <constraint firstItem="qGb-Tv-18s" firstAttribute="centerX" secondItem="pMX-Rp-J3G" secondAttribute="centerX" id="jLE-Sx-99t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pMX-Rp-J3G" firstAttribute="top" secondItem="jeA-Yn-hmT" secondAttribute="top" id="ITG-81-icu"/>
+                            <constraint firstAttribute="trailing" secondItem="pMX-Rp-J3G" secondAttribute="trailing" constant="80" id="L0a-pb-mqT"/>
+                            <constraint firstItem="nJ0-O3-OQ7" firstAttribute="top" secondItem="pMX-Rp-J3G" secondAttribute="bottom" id="P6d-9N-nlo"/>
+                            <constraint firstItem="pMX-Rp-J3G" firstAttribute="leading" secondItem="jeA-Yn-hmT" secondAttribute="leading" id="oft-Uk-3nj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userImage" destination="qGb-Tv-18s" id="sni-P8-Hpn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBd-Sd-MKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781.875" y="53.87323943661972"/>
         </scene>
     </scenes>
 </document>

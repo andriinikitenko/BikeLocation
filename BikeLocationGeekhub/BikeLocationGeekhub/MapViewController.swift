@@ -11,13 +11,18 @@ import GoogleMaps
 import Firebase
 class MapViewController: UIViewController {
     
+    @IBOutlet weak var locationSwitcher: UISwitch!
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
+    let userID = UserDefaults.standard.string(forKey: "UserId")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
     }
 }
 
@@ -26,47 +31,16 @@ class MapViewController: UIViewController {
 extension MapViewController: CLLocationManagerDelegate {
     // 2
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        // 3
-        if status == .authorizedWhenInUse {
-            
-            // 4
-            locationManager.startUpdatingLocation()
-            locationManager.location?.coordinate.latitude
-            let preferences = UserDefaults.standard
-            let userID = preferences.string(forKey: "UserId")
-            
-            
-            var ref: FIRDatabaseReference!
-            ref = FIRDatabase.database().reference().child("users").child(userID!)
-            ref.child("Location").setValue(["Latitude": locationManager.location?.coordinate.latitude, "Longitude": locationManager.location?.coordinate.longitude])
-            
-            DispatchQueue.global().async {
-                while true {
-                    sleep(30)
-                    var ref: FIRDatabaseReference!
-                    
-                    ref = FIRDatabase.database().reference().child("users").child(userID!)
-                    ref.child("Location").setValue(["Latitude": self.locationManager.location?.coordinate.latitude, "Longitude": self.locationManager.location?.coordinate.longitude])
-                    //It s govnokod but work
-                }
-            }
-            
-            //5
-            mapView.isMyLocationEnabled = true
-            mapView.settings.myLocationButton = true
-        }
     }
     
     // 6
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            
-            // 7
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            
-            // 8
-            locationManager.stopUpdatingLocation()
+        guard let location = locations.first else { return }
+        if locationSwitcher.isOn {
+            print("SAVED")
+            userRef.child(userID).child("Location").setValue(["Latitude": locationManager.location?.coordinate.latitude, "Longitude": locationManager.location?.coordinate.longitude])
         }
-        
+        mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+
     }
 }

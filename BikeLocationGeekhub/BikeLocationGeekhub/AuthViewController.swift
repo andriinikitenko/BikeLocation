@@ -31,6 +31,8 @@ class AuthViewController: UIViewController {
         //                try FIRAuth.auth()?.signOut()
         //            } catch let logoutError {
         //            print(logout)
+        //        locationManager.stopUpdatingLocation()
+
         //            }
         //            }
         //            let loginController = AuthViewController()
@@ -38,6 +40,10 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction private func loginTouched(_ sender: UIButton) {
+        if let email = emailTextfield.text {
+            print(email)
+        }
+        
         guard let email = emailTextfield.text, let password = passwordTextfield.text
             else {
                 print("Form is not valid")
@@ -50,20 +56,9 @@ class AuthViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 print(error)
                 return
-                // Authenication sucessfuly by user
-                
-                //                func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-                //                    if (status == CLAuthorizationStatus.Denied) {
-                //                        // The user denied authorization
-                //                    } else if (status == CLAuthorizationStatus.AuthorizedAlways) {
-                //                        // The user accepted authorization
-                //                    }
-                //                }
             }
             
             let preferences = UserDefaults.standard
-            
-            
             preferences.set(user!.uid, forKey: "UserId")
             
             //  Save to disk

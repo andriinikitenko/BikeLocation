@@ -8,10 +8,5 @@
 //
 import Foundation
 import Firebase
-struct GlobalConstants {
-    // Constant define here.
-    func refered() {
-    var ref: FIRDatabaseReference!
-ref = FIRDatabase.database().reference()
-}
-}
+let databaseRef = FIRDatabase.database().reference()
+let userRef = databaseRef.child("users")

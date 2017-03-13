@@ -11,6 +11,7 @@
 		041E6B941E6C436E0016C7F5 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B931E6C436E0016C7F5 /* AuthViewController.swift */; };
 		041E6B9C1E6C5E890016C7F5 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E6B9B1E6C5E890016C7F5 /* Map.storyboard */; };
 		041E6B9E1E6C619F0016C7F5 /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B9D1E6C619F0016C7F5 /* CreateNewUserViewController.swift */; };
+		0420A5851E75AE8500206094 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420A5841E75AE8500206094 /* MenuViewController.swift */; };
 		0461EFAA1E59F7F900CD5641 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461EFA91E59F7F900CD5641 /* MapViewController.swift */; };
 		046DF61E1E6C7C42005E490C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DF61D1E6C7C42005E490C /* User.swift */; };
 		04B4D00F1E63645900F6B602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B4D00E1E63645900F6B602 /* GoogleService-Info.plist */; };
@@ -26,6 +27,7 @@
 		041E6B931E6C436E0016C7F5 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		041E6B9B1E6C5E890016C7F5 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		041E6B9D1E6C619F0016C7F5 /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
+		0420A5841E75AE8500206094 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0461EFA91E59F7F900CD5641 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		046DF61D1E6C7C42005E490C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04B4D00E1E63645900F6B602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				041E6B9B1E6C5E890016C7F5 /* Map.storyboard */,
+				0420A5841E75AE8500206094 /* MenuViewController.swift */,
 				0461EFA91E59F7F900CD5641 /* MapViewController.swift */,
 			);
 			name = Map;
@@ -303,6 +306,7 @@
 				041E6B941E6C436E0016C7F5 /* AuthViewController.swift in Sources */,
 				04C955A91E59EB73009E7897 /* AppDelegate.swift in Sources */,
 				046DF61E1E6C7C42005E490C /* User.swift in Sources */,
+				0420A5851E75AE8500206094 /* MenuViewController.swift in Sources */,
 				0461EFAA1E59F7F900CD5641 /* MapViewController.swift in Sources */,
 				041E6B901E6B06D60016C7F5 /* Constant.swift in Sources */,
 				041E6B9E1E6C619F0016C7F5 /* CreateNewUserViewController.swift in Sources */,

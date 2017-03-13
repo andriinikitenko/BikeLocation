@@ -18,14 +18,13 @@ class CreateNewUserViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
 
     }
 
     @IBAction private func createNewUserTouched(_ sender: UIButton) {
-        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text
-            else {
+        guard let email = emailTextField.text,
+            let password = passwordTextField.text,
+            let name = nameTextField.text else {
                 print("Form is not valid")
                 return
         }
@@ -41,8 +40,8 @@ class CreateNewUserViewController: UIViewController {
             }
             
             let preferences = UserDefaults.standard
-        
-                preferences.set(user!.uid, forKey: "UserId")
+            
+            preferences.set(user!.uid, forKey: "UserId")
             
             //  Save to disk
             preferences.synchronize()
