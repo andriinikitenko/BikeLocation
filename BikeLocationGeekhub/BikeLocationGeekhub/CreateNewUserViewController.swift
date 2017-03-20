@@ -30,7 +30,7 @@ class CreateNewUserViewController: UIViewController {
         }
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user:FIRUser?, error) in
             if error != nil {
-                let alert = UIAlertController(title: "Error", message: "Some kind of error please try again", preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
 
@@ -56,7 +56,7 @@ class CreateNewUserViewController: UIViewController {
 //            ref.setValue(["username": self.nameTextField.text!, "Email": email])
             ref.updateChildValues(values, withCompletionBlock: { (err, ref) in
                 if err != nil {
-                    let alert = UIAlertController(title: "Error", message: "Some kind of error please try again", preferredStyle: UIAlertControllerStyle.alert)
+                    let alert = UIAlertController(title: "Error", message: err?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 print(err)

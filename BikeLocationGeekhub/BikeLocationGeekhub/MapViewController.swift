@@ -15,7 +15,8 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
     let userID = UserDefaults.standard.string(forKey: "UserId")!
-    
+    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
@@ -23,6 +24,19 @@ class MapViewController: UIViewController {
         locationManager.startUpdatingLocation()
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
+        
+        if revealViewController() != nil {
+                        revealViewController().rearViewRevealWidth = 200
+            sideMenuButton.target = revealViewController()
+            sideMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            
+            revealViewController().rightViewRevealWidth = 150
+//            extraButton.target = revealViewController()
+//            extraButton.action = #selector(SWRevealViewController.rightRevealToggle(_:))
+            
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+
+        }
     }
 }
 

@@ -12,8 +12,15 @@
 		041E6B9C1E6C5E890016C7F5 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E6B9B1E6C5E890016C7F5 /* Map.storyboard */; };
 		041E6B9E1E6C619F0016C7F5 /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B9D1E6C619F0016C7F5 /* CreateNewUserViewController.swift */; };
 		0420A5851E75AE8500206094 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420A5841E75AE8500206094 /* MenuViewController.swift */; };
+		043A9B211E78608500BF88DD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B201E78608500BF88DD /* SWRevealViewController.m */; };
+		043A9B231E786BEB00BF88DD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B221E786BEB00BF88DD /* ChatViewController.swift */; };
+		043A9B251E786C9300BF88DD /* FrendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B241E786C9300BF88DD /* FrendsTableViewController.swift */; };
+		043A9B281E7872B400BF88DD /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B271E7872B400BF88DD /* SideMenuViewController.swift */; };
 		0461EFAA1E59F7F900CD5641 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461EFA91E59F7F900CD5641 /* MapViewController.swift */; };
 		046DF61E1E6C7C42005E490C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DF61D1E6C7C42005E490C /* User.swift */; };
+		04AFE9B11E794F2900ACB712 /* vwTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AFE9B01E794F2900ACB712 /* vwTbCell.xib */; };
+		04AFE9B31E794FA700ACB712 /* VwCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFE9B21E794FA700ACB712 /* VwCustomTableViewCell.swift */; };
+		04AFE9B51E79516100ACB712 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AFE9B41E79516100ACB712 /* Image.xcassets */; };
 		04B4D00F1E63645900F6B602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B4D00E1E63645900F6B602 /* GoogleService-Info.plist */; };
 		04C955A91E59EB73009E7897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C955A81E59EB73009E7897 /* AppDelegate.swift */; };
 		04C955AE1E59EB73009E7897 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C955AC1E59EB73009E7897 /* Login.storyboard */; };
@@ -28,8 +35,17 @@
 		041E6B9B1E6C5E890016C7F5 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		041E6B9D1E6C619F0016C7F5 /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
 		0420A5841E75AE8500206094 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		043A9B1E1E78608500BF88DD /* BikeLocationGeekhub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BikeLocationGeekhub-Bridging-Header.h"; sourceTree = "<group>"; };
+		043A9B1F1E78608500BF88DD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		043A9B201E78608500BF88DD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		043A9B221E786BEB00BF88DD /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		043A9B241E786C9300BF88DD /* FrendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrendsTableViewController.swift; sourceTree = "<group>"; };
+		043A9B271E7872B400BF88DD /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		0461EFA91E59F7F900CD5641 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		046DF61D1E6C7C42005E490C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04AFE9B01E794F2900ACB712 /* vwTbCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vwTbCell.xib; sourceTree = "<group>"; };
+		04AFE9B21E794FA700ACB712 /* VwCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VwCustomTableViewCell.swift; sourceTree = "<group>"; };
+		04AFE9B41E79516100ACB712 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		04B4D00E1E63645900F6B602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04C955A51E59EB73009E7897 /* BikeLocationGeekhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeLocationGeekhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C955A81E59EB73009E7897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +121,16 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		043A9B1D1E78606B00BF88DD /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				043A9B1F1E78608500BF88DD /* SWRevealViewController.h */,
+				043A9B201E78608500BF88DD /* SWRevealViewController.m */,
+				043A9B1E1E78608500BF88DD /* BikeLocationGeekhub-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		046DF61B1E6C6B6D005E490C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +144,15 @@
 		046DF61C1E6C6B74005E490C /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				043A9B1D1E78606B00BF88DD /* SWRevealViewController */,
 				041E6B9B1E6C5E890016C7F5 /* Map.storyboard */,
+				04AFE9B01E794F2900ACB712 /* vwTbCell.xib */,
+				04AFE9B21E794FA700ACB712 /* VwCustomTableViewCell.swift */,
+				04AFE9B41E79516100ACB712 /* Image.xcassets */,
 				0420A5841E75AE8500206094 /* MenuViewController.swift */,
+				043A9B221E786BEB00BF88DD /* ChatViewController.swift */,
+				043A9B241E786C9300BF88DD /* FrendsTableViewController.swift */,
+				043A9B271E7872B400BF88DD /* SideMenuViewController.swift */,
 				0461EFA91E59F7F900CD5641 /* MapViewController.swift */,
 			);
 			name = Map;
@@ -208,6 +241,7 @@
 				TargetAttributes = {
 					04C955A41E59EB73009E7897 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -242,6 +276,8 @@
 			files = (
 				04C955B61E59EB73009E7897 /* LaunchScreen.storyboard in Resources */,
 				04B4D00F1E63645900F6B602 /* GoogleService-Info.plist in Resources */,
+				04AFE9B51E79516100ACB712 /* Image.xcassets in Resources */,
+				04AFE9B11E794F2900ACB712 /* vwTbCell.xib in Resources */,
 				041E6B9C1E6C5E890016C7F5 /* Map.storyboard in Resources */,
 				04C955B31E59EB73009E7897 /* Assets.xcassets in Resources */,
 				04C955AE1E59EB73009E7897 /* Login.storyboard in Resources */,
@@ -306,9 +342,14 @@
 				041E6B941E6C436E0016C7F5 /* AuthViewController.swift in Sources */,
 				04C955A91E59EB73009E7897 /* AppDelegate.swift in Sources */,
 				046DF61E1E6C7C42005E490C /* User.swift in Sources */,
+				043A9B211E78608500BF88DD /* SWRevealViewController.m in Sources */,
+				043A9B281E7872B400BF88DD /* SideMenuViewController.swift in Sources */,
+				04AFE9B31E794FA700ACB712 /* VwCustomTableViewCell.swift in Sources */,
 				0420A5851E75AE8500206094 /* MenuViewController.swift in Sources */,
+				043A9B251E786C9300BF88DD /* FrendsTableViewController.swift in Sources */,
 				0461EFAA1E59F7F900CD5641 /* MapViewController.swift in Sources */,
 				041E6B901E6B06D60016C7F5 /* Constant.swift in Sources */,
+				043A9B231E786BEB00BF88DD /* ChatViewController.swift in Sources */,
 				041E6B9E1E6C619F0016C7F5 /* CreateNewUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,11 +474,14 @@
 			baseConfigurationReference = 6335ED416BFF1972938DD92B /* Pods-BikeLocationGeekhub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BikeLocationGeekhub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BikeLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BikeLocationGeekhub/BikeLocationGeekhub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -447,11 +491,13 @@
 			baseConfigurationReference = B7FE0A17C1B966AD06A465C5 /* Pods-BikeLocationGeekhub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BikeLocationGeekhub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BikeLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BikeLocationGeekhub/BikeLocationGeekhub-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
