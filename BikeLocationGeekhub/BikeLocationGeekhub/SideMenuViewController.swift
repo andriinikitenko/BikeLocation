@@ -7,48 +7,76 @@
 //
 
 import UIKit
-
-class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+import Firebase
+class SideMenuViewController: UITableViewController {
     
-
-    @IBOutlet var tableView: UITableView!
-    var tableData: [String] = ["map", "menu", "Друзі", "Налаштування","Вийти"]
-    
-    // 1
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Register custom cell
-        let nib = UINib(nibName: "vwTbCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "cell")
-    }
-    
-    // 2
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tableData.count
-    }
-    
-    
-    // 3
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 	{
         
-        let cell:VwCustomTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! VwCustomTableViewCell
+//        logout()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
         
-        cell.lblMenuItem.text = tableData[indexPath.row]
-        cell.imgMenuIcon.image = UIImage(named: tableData[indexPath.row])
-        
-        return cell
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    // 4
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Row \(indexPath.row) selected")
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    // 5
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 4 {
+            //Detecting tap to static cell =)
+            
+            logout()
+            
+        }
     }
 
+
+//class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+//
+//
+//    @IBOutlet var tableView: UITableView!
+//    var tableData: [String] = ["map", "menu", "Друзі", "Налаштування","Вийти"]
+//    
+//    // 1
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Register custom cell
+//        let nib = UINib(nibName: "vwTbCell", bundle: nil)
+//        tableView.register(nib, forCellReuseIdentifier: "cell")
+//    }
+//    
+//    // 2
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return self.tableData.count
+//    }
+//    
+//    
+//    // 3
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 	{
+//        
+//        let cell:VwCustomTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! VwCustomTableViewCell
+//        
+//        cell.lblMenuItem.text = tableData[indexPath.row]
+//        cell.imgMenuIcon.image = UIImage(named: tableData[indexPath.row])
+//        
+//        return cell
+//    }
+//    
+//    // 4
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("Row \(indexPath.row) selected")
+//    }
+//    
+//    // 5
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 70
+//    }
+//
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -102,6 +130,24 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+//    */
+//
+//}
 
+func logout() {
+    do {
+        let preferences = UserDefaults.standard
+        preferences.set(nil, forKey: "UserId")
+        //  Save to disk
+        preferences.synchronize()
+        
+        try FIRAuth.auth()?.signOut()
+    } catch let logoutError {
+        print(logout)
+    }
+    let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+    let viewController = storyboard.instantiateInitialViewController()
+    UIApplication.shared.keyWindow?.rootViewController = viewController
 }
+}
+

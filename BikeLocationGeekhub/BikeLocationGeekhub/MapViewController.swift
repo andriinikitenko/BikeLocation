@@ -14,7 +14,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var locationSwitcher: UISwitch!
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
-    let userID = UserDefaults.standard.string(forKey: "UserId")!
+    var userID: String? = UserDefaults.standard.string(forKey: "UserId")
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
      
     override func viewDidLoad() {
@@ -52,7 +52,10 @@ extension MapViewController: CLLocationManagerDelegate {
         guard let location = locations.first else { return }
         if locationSwitcher.isOn {
             print("SAVED")
-            userRef.child(userID).child("Location").setValue(["Latitude": locationManager.location?.coordinate.latitude, "Longitude": locationManager.location?.coordinate.longitude])
+            
+            if let userId = userID {
+                userRef.child(userId).child("Location").setValue(["Latitude": locationManager.location?.coordinate.latitude, "Longitude": locationManager.location?.coordinate.longitude])
+            }
         }
         mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
 

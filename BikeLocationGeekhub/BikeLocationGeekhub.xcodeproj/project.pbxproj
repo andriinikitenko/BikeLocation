@@ -11,7 +11,6 @@
 		041E6B941E6C436E0016C7F5 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B931E6C436E0016C7F5 /* AuthViewController.swift */; };
 		041E6B9C1E6C5E890016C7F5 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E6B9B1E6C5E890016C7F5 /* Map.storyboard */; };
 		041E6B9E1E6C619F0016C7F5 /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B9D1E6C619F0016C7F5 /* CreateNewUserViewController.swift */; };
-		0420A5851E75AE8500206094 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420A5841E75AE8500206094 /* MenuViewController.swift */; };
 		043A9B211E78608500BF88DD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B201E78608500BF88DD /* SWRevealViewController.m */; };
 		043A9B231E786BEB00BF88DD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B221E786BEB00BF88DD /* ChatViewController.swift */; };
 		043A9B251E786C9300BF88DD /* FrendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A9B241E786C9300BF88DD /* FrendsTableViewController.swift */; };
@@ -34,7 +33,6 @@
 		041E6B931E6C436E0016C7F5 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		041E6B9B1E6C5E890016C7F5 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		041E6B9D1E6C619F0016C7F5 /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
-		0420A5841E75AE8500206094 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		043A9B1E1E78608500BF88DD /* BikeLocationGeekhub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BikeLocationGeekhub-Bridging-Header.h"; sourceTree = "<group>"; };
 		043A9B1F1E78608500BF88DD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		043A9B201E78608500BF88DD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				04AFE9B01E794F2900ACB712 /* vwTbCell.xib */,
 				04AFE9B21E794FA700ACB712 /* VwCustomTableViewCell.swift */,
 				04AFE9B41E79516100ACB712 /* Image.xcassets */,
-				0420A5841E75AE8500206094 /* MenuViewController.swift */,
 				043A9B221E786BEB00BF88DD /* ChatViewController.swift */,
 				043A9B241E786C9300BF88DD /* FrendsTableViewController.swift */,
 				043A9B271E7872B400BF88DD /* SideMenuViewController.swift */,
@@ -345,7 +342,6 @@
 				043A9B211E78608500BF88DD /* SWRevealViewController.m in Sources */,
 				043A9B281E7872B400BF88DD /* SideMenuViewController.swift in Sources */,
 				04AFE9B31E794FA700ACB712 /* VwCustomTableViewCell.swift in Sources */,
-				0420A5851E75AE8500206094 /* MenuViewController.swift in Sources */,
 				043A9B251E786C9300BF88DD /* FrendsTableViewController.swift in Sources */,
 				0461EFAA1E59F7F900CD5641 /* MapViewController.swift in Sources */,
 				041E6B901E6B06D60016C7F5 /* Constant.swift in Sources */,

@@ -21,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         GMSServices.provideAPIKey("AIzaSyClg0xs0U_CpmuULSFrBjUk4zEJuRjRNtM")
         FIRApp.configure()
-        if let _ = UserDefaults.standard.value(forKey: "UserId") {
+        if let data = UserDefaults.standard.value(forKey: "UserId") {
+            
+            print(data)
+            
             let storyboard: UIStoryboard = UIStoryboard(name: "Map", bundle: nil)
             let viewController = storyboard.instantiateInitialViewController()
             window?.rootViewController = viewController
