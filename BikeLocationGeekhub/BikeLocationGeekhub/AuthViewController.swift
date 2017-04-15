@@ -16,7 +16,7 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(r: 192, g: 192, b: 192)
+        view.backgroundColor = UIColor(r: 185, g: 175, b: 165)
         //        if FIRAuth.auth()?.currentUser?.uid == nil {
         //        perform(#selector(handleLogout), with: nil, afterDelay: 0)
         //        handleLogout()

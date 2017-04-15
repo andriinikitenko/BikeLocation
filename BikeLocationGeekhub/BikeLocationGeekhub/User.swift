@@ -7,25 +7,17 @@
 //
 
 import Foundation
-struct Users {
+class User {
     var name : String
     var userEmail: String
-    var userCoordinate: Double?
-    var userOnlineStatus: Bool
-    var listOfFrend: String?
-    var listOfOnlineUser: String?
+//    var userCoordinate: Double?
+//    var userOnlineStatus: Bool
+//    var listOfFrend: String?
+//    var listOfOnlineUser: String?
 
-
+    init(name: String, userEmail: String) {
+        self.name = name
+        self.userEmail = userEmail
+    }
+    
 }
-
-//User {
-//    var name : String
-//    var age : Int
-//
-//    init( name: String,age: Int) {
-//    
-//        self.age = age
-//        self.name = name
-//    }
-//    
-//}

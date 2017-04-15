@@ -11,6 +11,8 @@ import UIKit
 class VwCustomTableViewCell: UITableViewCell {
     @IBOutlet weak var imgMenuIcon: UIImageView!
     @IBOutlet weak var lblMenuItem: UILabel!
+    @IBAction func addFrendButton(_ sender: Any) {
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

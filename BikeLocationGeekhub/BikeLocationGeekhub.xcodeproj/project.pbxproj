@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040FD27C1E959C3000638CCE /* AddFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FD27B1E959C3000638CCE /* AddFriendTableViewController.swift */; };
 		041E6B901E6B06D60016C7F5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B8F1E6B06D60016C7F5 /* Constant.swift */; };
 		041E6B941E6C436E0016C7F5 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E6B931E6C436E0016C7F5 /* AuthViewController.swift */; };
 		041E6B9C1E6C5E890016C7F5 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E6B9B1E6C5E890016C7F5 /* Map.storyboard */; };
@@ -21,6 +22,9 @@
 		04AFE9B31E794FA700ACB712 /* VwCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFE9B21E794FA700ACB712 /* VwCustomTableViewCell.swift */; };
 		04AFE9B51E79516100ACB712 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AFE9B41E79516100ACB712 /* Image.xcassets */; };
 		04B4D00F1E63645900F6B602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B4D00E1E63645900F6B602 /* GoogleService-Info.plist */; };
+		04B5FF051E9E68880072EC27 /* Bikers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5FF041E9E68880072EC27 /* Bikers.swift */; };
+		04B5FF071E9EA1250072EC27 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5FF061E9EA1250072EC27 /* UserCell.swift */; };
+		04B5FF091E9EA19A0072EC27 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5FF081E9EA19A0072EC27 /* Message.swift */; };
 		04C955A91E59EB73009E7897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C955A81E59EB73009E7897 /* AppDelegate.swift */; };
 		04C955AE1E59EB73009E7897 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C955AC1E59EB73009E7897 /* Login.storyboard */; };
 		04C955B31E59EB73009E7897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C955B21E59EB73009E7897 /* Assets.xcassets */; };
@@ -29,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040FD27B1E959C3000638CCE /* AddFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendTableViewController.swift; sourceTree = "<group>"; };
 		041E6B8F1E6B06D60016C7F5 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		041E6B931E6C436E0016C7F5 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		041E6B9B1E6C5E890016C7F5 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		04AFE9B21E794FA700ACB712 /* VwCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VwCustomTableViewCell.swift; sourceTree = "<group>"; };
 		04AFE9B41E79516100ACB712 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		04B4D00E1E63645900F6B602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04B5FF041E9E68880072EC27 /* Bikers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bikers.swift; sourceTree = "<group>"; };
+		04B5FF061E9EA1250072EC27 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		04B5FF081E9EA19A0072EC27 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		04C955A51E59EB73009E7897 /* BikeLocationGeekhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeLocationGeekhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C955A81E59EB73009E7897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C955AD1E59EB73009E7897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -72,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				046DF61D1E6C7C42005E490C /* User.swift */,
+				04B5FF041E9E68880072EC27 /* Bikers.swift */,
+				04B5FF081E9EA19A0072EC27 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -150,7 +160,9 @@
 				043A9B221E786BEB00BF88DD /* ChatViewController.swift */,
 				043A9B241E786C9300BF88DD /* FrendsTableViewController.swift */,
 				043A9B271E7872B400BF88DD /* SideMenuViewController.swift */,
+				040FD27B1E959C3000638CCE /* AddFriendTableViewController.swift */,
 				0461EFA91E59F7F900CD5641 /* MapViewController.swift */,
+				04B5FF061E9EA1250072EC27 /* UserCell.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -341,10 +353,14 @@
 				046DF61E1E6C7C42005E490C /* User.swift in Sources */,
 				043A9B211E78608500BF88DD /* SWRevealViewController.m in Sources */,
 				043A9B281E7872B400BF88DD /* SideMenuViewController.swift in Sources */,
+				04B5FF051E9E68880072EC27 /* Bikers.swift in Sources */,
+				04B5FF071E9EA1250072EC27 /* UserCell.swift in Sources */,
 				04AFE9B31E794FA700ACB712 /* VwCustomTableViewCell.swift in Sources */,
+				04B5FF091E9EA19A0072EC27 /* Message.swift in Sources */,
 				043A9B251E786C9300BF88DD /* FrendsTableViewController.swift in Sources */,
 				0461EFAA1E59F7F900CD5641 /* MapViewController.swift in Sources */,
 				041E6B901E6B06D60016C7F5 /* Constant.swift in Sources */,
+				040FD27C1E959C3000638CCE /* AddFriendTableViewController.swift in Sources */,
 				043A9B231E786BEB00BF88DD /* ChatViewController.swift in Sources */,
 				041E6B9E1E6C619F0016C7F5 /* CreateNewUserViewController.swift in Sources */,
 			);
@@ -393,7 +409,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -443,7 +460,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

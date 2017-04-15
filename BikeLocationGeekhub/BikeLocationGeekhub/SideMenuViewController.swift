@@ -12,6 +12,7 @@ class SideMenuViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorStyle = .none
         
 //        logout()
         // Uncomment the following line to preserve selection between presentations
